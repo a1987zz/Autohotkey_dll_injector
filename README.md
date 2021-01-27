@@ -1,2 +1,2 @@
 # ahk_injector
-Ahk_injector 32_bit
+ahk_injector 32_bit
