@@ -21,5 +21,4 @@ NumPut(id, ParamStruct, 524, "Uint")
 
 StrPut(File, &ParamStruct + 4, "CP0")
 
-Ptr := A_PtrSize ? "Ptr" : "UInt"
-DllCall(funcA, Ptr, &ParamStruct)
+DllCall(funcA, "Ptr", &ParamStruct)
