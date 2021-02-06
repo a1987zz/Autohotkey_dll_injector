@@ -1,1 +1,1 @@
-# windows_7 ahk_injector 32_bit
+# windows_7 ahk_injector 32-bit
