@@ -1,1 +1,1 @@
-# windows-7 ahk-injector 32-bit
+# windows-7 ahk-injector Ansi 32-bit
