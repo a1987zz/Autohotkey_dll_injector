@@ -1,1 +1,1 @@
-# Ahk-injector win-7
+# Ahk-injector for win-7
