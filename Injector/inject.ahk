@@ -10,7 +10,7 @@ funcA := DllCall("GetProcAddress","Ptr", hModule, "Astr","InjectA")
 ;msgbox % funcA
 
 VarSetCapacity(ParamStruct, 540, 0)
-DllCall("ZeroMemory", Ptr, &ParamStruct, "UInt", 540)
+DllCall("ZeroMemory", "Ptr", &ParamStruct, "UInt", 540)
 
 NumPut(2, ParamStruct, 528, "Uint") ; 2 - метод инжекта ManualMap
 NumPut(0, ParamStruct, 532, "Uint") ; 0 - NtCreateThreadEx
