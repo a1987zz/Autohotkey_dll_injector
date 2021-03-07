@@ -17,4 +17,4 @@ NumPut(id, ParamStruct, 524, "Uint")
 StrPut(File, &ParamStruct + 4, "CP0")
 
 DllCall(funcA, "Ptr", &ParamStruct)
-DllCall("FreeLibrary", "Ptr", hModule)
+;DllCall("FreeLibrary", "Ptr", hModule)
