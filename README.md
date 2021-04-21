@@ -1,1 +1,1 @@
-# Ansi 32 injector
+# Ansi 32-bit injector
