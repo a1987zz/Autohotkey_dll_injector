@@ -1,1 +1,1 @@
-# 64, 32-bit injector for autohotkey
+# 32, 64-bit injector for autohotkey
