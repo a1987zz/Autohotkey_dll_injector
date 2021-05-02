@@ -3,8 +3,8 @@
 File := "test_.dll"
 WinGet, id, PID, ahk_exe test.exe
 
-hModule := DllCall("LoadLibrary", "Str", "gh_injector.dll", "Prt")
-funcA := DllCall("GetProcAddress","Ptr", hModule, "Astr","InjectA", "Prt")
+hModule := DllCall("LoadLibrary", "Str", "gh_injector.dll")
+funcA := DllCall("GetProcAddress","Ptr", hModule, "Astr","InjectA")
 ;msgbox % funcA
 
 VarSetCapacity(ParamStruct, 540, 0)
