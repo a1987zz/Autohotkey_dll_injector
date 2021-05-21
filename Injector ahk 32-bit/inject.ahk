@@ -4,8 +4,8 @@ File := "test_.dll"
 WinGet, id, PID, ahk_exe test.exe
 
 hModule := DllCall("LoadLibrary", "Str", "gh_injector.dll")
-funcA := DllCall("GetProcAddress","Ptr", hModule, "Astr","InjectA")
-;msgbox % funcA
+injectA := DllCall("GetProcAddress","Ptr", hModule, "Astr","InjectA")
+;msgbox % injectA
 
 VarSetCapacity(ParamStruct, 540, 0)
 DllCall("ZeroMemory", "Ptr", &ParamStruct, "UInt", 540)
@@ -23,5 +23,5 @@ NumPut(id, ParamStruct, 524, "Uint")
 
 StrPut(File, &ParamStruct + 4, "CP0")
 
-DllCall(funcA, "Ptr", &ParamStruct)
+DllCall(injectA, "Ptr", &ParamStruct)
 ;DllCall("FreeLibrary", "Ptr", hModule)
