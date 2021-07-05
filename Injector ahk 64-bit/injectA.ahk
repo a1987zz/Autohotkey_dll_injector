@@ -9,7 +9,6 @@ InjectA := DllCall("GetProcAddress", "Ptr", hModule, "AStr", "InjectA", "Ptr")
 ;msgbox % InjectA
 
 VarSetCapacity(ParamStruct, 540, 0)
-DllCall("ZeroMemory", "Ptr", &ParamStruct, "UInt", 540)
 
 ;INJ_ERASE_HEADER := 0x0001
 ;INJ_SHIFT_MODULE := 0x0008
