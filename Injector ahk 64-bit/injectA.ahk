@@ -5,7 +5,7 @@ File := "test_.dll"
 WinGet, id, PID, ahk_exe test.exe
 
 hModule := DllCall("LoadLibrary", "Str", "gh_injector.dll", "Ptr")
-InjectA := DllCall("GetProcAddress","Ptr", hModule, "AStr","InjectA", "Ptr")
+InjectA := DllCall("GetProcAddress", "Ptr", hModule, "AStr", "InjectA", "Ptr")
 ;msgbox % InjectA
 
 VarSetCapacity(ParamStruct, 540, 0)
