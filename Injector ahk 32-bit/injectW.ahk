@@ -5,7 +5,7 @@ str := "0"
 
 WinGet, id, PID, ahk_exe test.exe
 
-hModule := DllCall("LoadLibrary", "Str", "gh_injector.dll")
+hModule := DllCall("LoadLibrary", "Str", "gh_injector.dll", "Ptr")
 InjectW := DllCall("GetProcAddress", "Ptr", hModule, "Astr", "InjectW", "Ptr")
 ;msgbox % InjectW
 
